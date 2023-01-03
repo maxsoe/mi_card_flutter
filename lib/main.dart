@@ -21,16 +21,22 @@ class MyApp extends StatelessWidget {
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Container(
-                  width: 100,
-                  height: 100,
-                  color: Colors.yellow,
+                CircleAvatar(
+                  radius: 80,
+                  foregroundImage: AssetImage('images/batman.png'),
+                  backgroundColor: Colors.white,
                 ),
-                Container(
-                  width: 100,
-                  height: 100,
-                  color: Colors.green,
-                )
+                SizedBox(
+                  height: 8,
+                ),
+                Text(
+                  'Max Power',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 36,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
               ],
             ),
             Container(
