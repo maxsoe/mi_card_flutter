@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Container(
-              width: 100,
+              width: 50,
               color: Colors.red,
             ),
             Expanded(
@@ -47,7 +47,37 @@ class MyApp extends StatelessWidget {
                       fontSize: 16,
                       fontWeight: FontWeight.bold,
                     ),
-                  )
+                  ),
+                  Container(
+                    color: Colors.white,
+                    padding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+                    margin: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+                    child: Row(
+                      children: [
+                        Icon(Icons.phone),
+                        SizedBox(width: 16),
+                        Text(
+                          '+971 555 555 123',
+                          style: TextStyle(fontSize: 16),
+                        )
+                      ],
+                    ),
+                  ),
+                  Container(
+                    color: Colors.white,
+                    padding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+                    margin: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+                    child: Row(
+                      children: [
+                        Icon(Icons.mail),
+                        SizedBox(width: 16),
+                        Text(
+                          'max@example.com',
+                          style: TextStyle(fontSize: 16),
+                        )
+                      ],
+                    ),
+                  ),
                 ],
               ),
             ),
