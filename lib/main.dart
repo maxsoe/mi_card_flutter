@@ -14,10 +14,10 @@ class MyApp extends StatelessWidget {
             child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Container(
-              width: 50,
-              color: Colors.red,
-            ),
+            // Container(
+            //   width: 50,
+            //   color: Colors.red,
+            // ),
             Expanded(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -48,43 +48,45 @@ class MyApp extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  Container(
-                    color: Colors.white,
-                    padding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
-                    margin: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
-                    child: Row(
-                      children: [
-                        Icon(Icons.phone),
-                        SizedBox(width: 16),
-                        Text(
-                          '+971 555 555 123',
-                          style: TextStyle(fontSize: 16),
-                        )
-                      ],
+                  SizedBox(
+                    height: 32,
+                    width: 128,
+                    child: Divider(
+                      color: Colors.white,
+                      thickness: 1,
+                      // indent: 32,
+                      // endIndent: 32,
                     ),
                   ),
-                  Container(
-                    color: Colors.white,
-                    padding: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+                  Card(
+                    // color: Colors.white,
                     margin: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
-                    child: Row(
-                      children: [
-                        Icon(Icons.mail),
-                        SizedBox(width: 16),
-                        Text(
-                          'max@example.com',
-                          style: TextStyle(fontSize: 16),
-                        )
-                      ],
+                    child: ListTile(
+                      leading: Icon(Icons.phone),
+                      title: Text(
+                        '+971 555 555 123',
+                        style: TextStyle(fontSize: 16),
+                      ),
+                    ),
+                  ),
+                  Card(
+                    color: Colors.white,
+                    margin: EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+                    child: ListTile(
+                      leading: Icon(Icons.mail),
+                      title: Text(
+                        'max@example.com',
+                        style: TextStyle(fontSize: 16),
+                      ),
                     ),
                   ),
                 ],
               ),
             ),
-            Container(
-              width: 100,
-              color: Colors.blue,
-            ),
+            // Container(
+            //   width: 100,
+            //   color: Colors.blue,
+            // ),
           ],
         )),
       ),
